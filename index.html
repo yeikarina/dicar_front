@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <script src="https://kit.fontawesome.com/be05b69b52.js" crossorigin="anonymous"></script>
     <title>DICAR</title>
 </head>
 
 <body>
     <header class="Header">
-        <img src="" alt="DICAR importadora S.A.S" class="Logo">
+        <img src="" alt="DICAR importadora S.A.S" class="Header-logo">
         <nav class="Navigation">
-            <ul class="items">
-                <li class="item">
-                    <a href="" class="link">
+            <ul class="Header-items">
+                <li class="Header-item">
+                    <a href="" class="Header-link">
                         Productos
                     </a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">
+                <li class="Header-item">
+                    <a href="" class="Header-link">
                         Empresa
                     </a>
                 </li>
-                <li class="item">
-                    <a href="" class="link">
+                <li class="Header-item">
+                    <a href="" class="Header-link">
                         Contactos
                     </a>
                 </li>
-                <label for="Search"><input id="Search" type="search" name="q"></label>
+                <div class="Header-search">                    
+                    <button type="submit" class="Header-searchButton" name="search" id="search"><i class="fa fa-search"></i></button>
+                    <input class="Header-searchText" id="Search" type="text" name="q" placeholder="Buscar">
+                </div>
             </ul>
         </nav>
     </header>
     <main class="Content">
-        <article class="Content">
+        <article class="Article">
             <section class="Banner">
                 <h1>Te brindamos las herramientas para construir el futuro</h1>
             </section>

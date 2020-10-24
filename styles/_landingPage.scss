@@ -1,0 +1,19 @@
+.Article{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fdf1b9;
+    .Products, .Us{
+        background-color: #f7cf18;
+    }
+    .Products{
+        width: 65%;
+        align-self: flex-end;
+        margin-bottom: 10%;
+    }
+    .Us{
+        width: 70%;
+        align-self: flex-start;
+        
+    }
+}
