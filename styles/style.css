@@ -66,6 +66,12 @@
   margin: 0 10%;
 }
 
+.Big-font {
+  font-size: 70px;
+  color: #fdf1b9;
+  line-height: 50px;
+}
+
 /*
 *{
     border: 1px solid blue;
@@ -90,10 +96,56 @@ body{
 }
 
 .Article .Products {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 65%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: 10%;
+}
+
+.Article .Products .normal-img {
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  margin: 0;
+  left: -5%;
+}
+
+.Article .Products .Products-subtitle {
+  padding: 0 15%;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+.Article .Products .Products-title {
+  width: 100%;
+  font-size: 30px;
+  position: relative;
+  left: -5%;
+}
+
+.Article .Products .Products-text {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 5%;
+  margin: 0;
+  width: 50%;
+}
+
+.Article .Products .Products-tag {
+  margin-bottom: 0;
+  margin: 0.5em auto 0;
 }
 
 .Article .Us {

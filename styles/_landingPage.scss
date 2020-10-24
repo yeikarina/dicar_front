@@ -7,9 +7,42 @@
         background-color: #f7cf18;
     }
     .Products{
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
         width: 65%;
         align-self: flex-end;
         margin-bottom: 10%;
+        .normal-img{
+            display: inline-block;
+            position: relative;
+              width: 50%;     
+              margin: 0;
+              left: -5%;
+        }
+        .Products-subtitle{
+            padding: 0 15%;
+            border-bottom: 3px solid black;
+            text-align: center;
+        }
+        .Products-title{
+            width: 100%;
+            font-size: 30px;
+            position: relative;            
+            left: -5%;
+        }
+        .Products-text{
+            display: inline-block;
+            box-sizing: border-box;
+            padding-right: 5%;
+            margin: 0;
+            width: 50%;
+        }
+        .Products-tag{
+            margin-bottom: 0;            
+            margin: 0.5em auto 0;
+        }
     }
     .Us{
         width: 70%;
