@@ -1,54 +1,77 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 .Header{
     display: flex;
     flex-flow: row nowrap;
-    margin: 0 10%;
-    padding: 0 5%;
+    margin: 0;
+    padding: 0 6.1%;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
+    &-logo{
+        width: 19%;
+    }
     &-items{
+        font-weight: bold;
+        font-size: 24px;
         list-style: none;
         display: flex;
     }
     &-item{
         display: inline-block;
-        margin: 0 2em;
-    }
-    &-search{  
-        width: fit-content;        
-        border-radius: 10px;        
-        background-color: #d2d2d2;
-        input,button{
-            background-color: #d2d2d2;
-            border: none;
-            margin: 0;
-            padding: 0;
-        }
-        input{
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            width: 10em;
-        }
-        button{
-            display: inline-block;
-            position: relative;
-            margin-left: 1em;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
-        }
-        
+        margin: 0;
+        margin-right: 2em;
     }
     &-link{
         text-decoration: none;
     }
+    &-link:link, &-link:visited{
+        color: #201E1E;
+    }
+    &-search{  
+        width: 100%;        
+        border-radius: 10px;        
+        background-color: #d2d2d2;
+        display: flex;
+        input,button{
+           background-color: #d2d2d2;
+            border: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        input::placeholder{
+            color: #8e8e8e;
+        }
+        input{   
+            color: #8e8e8e;        
+            font-weight: bold;
+            font-size: 24px;
+            border-top-right-radius: 12px;
+            border-bottom-right-radius: 12px;
+            width: 8em;            
+        }
+        button{
+            color: #8e8e8e;
+            display: inline-block;
+            position: relative;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 12px;
+        }
+        
+    }
 }
 .Content{
-    margin: 0 10%;
+   // margin: 0 10%;
+   width: 100%;
 }
 .Big-font{
-    font-size: 70px;
+    font-size: 100px;
     color: #fdf1b9;
-    line-height: 50px;
+    line-height: 160px;
 }
 /*
 *{
