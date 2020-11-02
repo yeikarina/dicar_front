@@ -10,9 +10,19 @@
     display: flex;
     flex-flow: column nowrap;
     background-color: #fdf1b9;
+    &-grid{
+        position: relative;
+        display: grid;
+        grid-template-rows: auto pxToem(16, 51) * 1em auto;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: right;
+    }
     .Banner{
         width: 100%;
         position: relative;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
         &-image{
             width: 100%;
         }
@@ -36,6 +46,8 @@
         background-color: #f7cf18;
     }
     .Products{
+        grid-row: 2 / 4;
+        grid-column: 1 / 2;
         position: relative;
         display: flex;
         flex-flow: row wrap;
