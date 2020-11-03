@@ -25,6 +25,9 @@
         grid-column: 1 / 2;
         &-image{
             width: 100%;
+        }        
+        &-products-image{
+            //opacity: 0;
         }
         &-title{
             top: 0%;
@@ -41,9 +44,9 @@
             width: 100%;
             box-sizing: border-box;
         }
-    }
-    .Products, .Us{
-        background-color: #f7cf18;
+        & h1.Background-none{
+           background-color: transparent;
+        }
     }
     .Products{
         grid-row: 2 / 4;
@@ -56,13 +59,18 @@
         width: 67.2%;
         align-self: flex-end;
         margin-bottom: 10%;
-        .normal-img{
+        &-image{
             display: inline-block;
             position: relative;
-              width: 50%;     
-              margin: 0;
-              left: -5%;
+            width: 50%;     
+            margin: 0;
+            left: -5%;
+            .Big-image{
+                width: 100%;
+                float: left;
+            }
         }
+        
         .Products-subtitle{
             width: 50%;
             border-bottom: 3px solid black;

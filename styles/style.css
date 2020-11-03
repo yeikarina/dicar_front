@@ -6,6 +6,21 @@ a {
   text-decoration: none;
 }
 
+span.Watch-Products {
+  display: block;
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+span.Watch-Products .link {
+  border-radius: 25px;
+  color: #f7cf18;
+  background-color: #201E1E;
+  padding: 0.3em 0.8em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .Content {
   width: 100%;
 }
@@ -46,8 +61,12 @@ h3[class*="title"] {
   background-color: #ffffff;
 }
 
-.Header-logo {
+.Header-logo-link {
   width: 19%;
+}
+
+.Header-logo {
+  width: 100%;
 }
 
 .Header .Navigation {
@@ -150,6 +169,10 @@ h3[class*="title"] {
   margin-right: 0.5em;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+.Products, .Us, .Components {
+  background-color: #f7cf18;
 }
 
 .Footer {
@@ -283,8 +306,8 @@ body{
           box-sizing: border-box;
 }
 
-.Article .Products, .Article .Us {
-  background-color: #f7cf18;
+.Article .Banner h1.Background-none {
+  background-color: transparent;
 }
 
 .Article .Products {
@@ -312,12 +335,17 @@ body{
   margin-bottom: 10%;
 }
 
-.Article .Products .normal-img {
+.Article .Products-image {
   display: inline-block;
   position: relative;
   width: 50%;
   margin: 0;
   left: -5%;
+}
+
+.Article .Products-image .Big-image {
+  width: 100%;
+  float: left;
 }
 
 .Article .Products .Products-subtitle {
@@ -411,6 +439,173 @@ body{
 .Us-content .Us-video video {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  width: 100%;
+}
+
+.Article section.No-flex {
+  display: inline-block;
+}
+
+.Article .Products {
+  margin-bottom: 11%;
+}
+
+.Article .Products-outLeft {
+  width: 116%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 16%;
+}
+
+.Article .Products-outLeft .Products-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+.Article .Products-outLeft .Big-image {
+  width: 40%;
+  height: auto;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Article .Products-outLeft .small {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: inline;
+  padding: 0;
+}
+
+.Article .Products-outLeft .Products-text {
+  position: relative;
+  width: 49%;
+  padding-right: 3%;
+  font-size: 16px;
+}
+
+.Article .Products-tag {
+  position: relative;
+  font-size: 68.75px;
+  text-align: center;
+}
+
+.Article .Components {
+  width: 77.5%;
+  min-height: 55.9%;
+  height: 55.9%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+}
+
+.Article .Components-tag {
+  color: #FFFFFF;
+  font-size: 68.75px;
+  position: absolute;
+  left: 0%;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  -webkit-transform-origin: 10% 19%;
+          transform-origin: 10% 19%;
+}
+
+.Article .Components-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -4em;
+  left: 13.05%;
+  width: 75%;
+  height: 100%;
+}
+
+.Article .Components-text {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.Article .Components-image {
+  width: 63%;
+}
+
+.Article .Hidraulic {
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 85.3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.Article .Hidraulic-title {
+  width: 100%;
+}
+
+.Article .Hidraulic-text {
+  width: 100%;
+  font-size: 16px;
+}
+
+.Article .Hidraulic-product {
+  width: 35%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.Article .Hidraulic-product .product-title {
+  font-size: 27.5;
+  font-weight: 700;
+}
+
+.Article .Hidraulic-product .product-image {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

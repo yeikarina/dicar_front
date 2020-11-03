@@ -4,6 +4,18 @@ body{
 a{
     text-decoration: none;
 }
+span.Watch-Products{
+    display: block;
+    text-align: center;
+    margin-top: 2.5em;
+    .link{
+        border-radius: 25px;
+        color: #f7cf18;
+        background-color: #201E1E;
+        padding: 0.3em 0.8em;
+        box-sizing: border-box;
+    }
+}
 .Content{
    // margin: 0 10%;
    width: 100%;
@@ -30,8 +42,11 @@ h3[class*="title"]{
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    &-logo{
+    &-logo-link{
         width: 19%;
+    }
+    &-logo{
+        width: 100%;
     }
     .Navigation{
         position: relative;
@@ -97,6 +112,10 @@ h3[class*="title"]{
         }
         
     }
+}
+
+.Products, .Us, .Components{
+    background-color: #f7cf18;
 }
 .Footer{
     position: relative;
