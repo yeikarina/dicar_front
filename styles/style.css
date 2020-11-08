@@ -10,6 +10,7 @@ span.Watch-Products {
   display: block;
   text-align: center;
   margin-top: 2.5em;
+  margin-bottom: 4em;
 }
 
 span.Watch-Products .link {
@@ -171,7 +172,7 @@ h3[class*="title"] {
   border-bottom-left-radius: 15px;
 }
 
-.Products, .Us, .Components {
+.Products, .Us, .Components, .Company {
   background-color: #f7cf18;
 }
 
@@ -634,5 +635,89 @@ body{
 
 .Article .Tools .Hidraulic-product .product-title {
   height: 50%;
+}
+
+.Article section.Company {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  position: relative;
+  width: 80%;
+  display: inline-block;
+  min-height: 26.875em;
+}
+
+.Article section.Company .Company-content {
+  width: 82.2%;
+  margin-left: 10%;
+}
+
+.Article section.Company .Company-content .Company-text {
+  font-size: 16px;
+}
+
+.Article .Values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Article .Values .Company-mission, .Article .Values .Company-vision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 71.5%;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5% 0;
+}
+
+.Article .Values .Company-mission img, .Article .Values .Company-vision img {
+  width: 19.5%;
+  min-width: 6.5625em;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Article .Values .Company-mission .Values-content, .Article .Values .Company-vision .Values-content {
+  border-left: 0.2em solid black;
+  padding-left: 2.8%;
+  margin-left: 7.9%;
+  width: 72%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.Article .Values .Company-mission .Values-content .vision-title, .Article .Values .Company-mission .Values-content .mission-title, .Article .Values .Company-vision .Values-content .vision-title, .Article .Values .Company-vision .Values-content .mission-title {
+  margin-top: 0;
+}
+
+.Article .Values .Company-vision {
+  margin-top: 0;
+}
+
+.Article .Values .vision-text, .Article .Values .mission-text {
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
