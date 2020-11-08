@@ -345,7 +345,6 @@ body{
 
 .Article .Products-image .Big-image {
   width: 100%;
-  float: left;
 }
 
 .Article .Products .Products-subtitle {
@@ -448,6 +447,7 @@ body{
 
 .Article .Products {
   margin-bottom: 11%;
+  width: 65%;
 }
 
 .Article .Products-outLeft {
@@ -607,5 +607,32 @@ body{
 
 .Article .Hidraulic-product .product-image {
   width: 100%;
+}
+
+.Article .Hidraulic span.Watch-Products {
+  margin-bottom: 4em;
+}
+
+.Article .Lifting {
+  width: 67%;
+}
+
+.Article .Lifting-image {
+  left: -10%;
+}
+
+.Article .Lifting .Products-text {
+  font-size: 16px;
+}
+
+.Article .Tools .Hidraulic-product {
+  width: 23.3333%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Article .Tools .Hidraulic-product .product-title {
+  height: 50%;
 }
 /*# sourceMappingURL=style.css.map */

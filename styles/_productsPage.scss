@@ -4,6 +4,7 @@
     }
     .Products{
         margin-bottom: 11%;
+        width: 65%;
         &-outLeft{
             width: 116%;
             display: flex;
@@ -106,6 +107,27 @@
             }
             .product-image{
                 width: 100%;
+            }
+        }
+        span.Watch-Products{
+            margin-bottom: 4em;
+        }
+    }
+    .Lifting{
+        width: 67%;
+        &-image{
+            left: -10%;
+        }
+        .Products-text{
+            font-size: 16px;
+        }
+    }
+    .Tools{
+        .Hidraulic-product{
+            width: 23.3333%;
+            justify-content: flex-end;
+            .product-title{
+                height: 50%;
             }
         }
     }
