@@ -172,7 +172,7 @@ h3[class*="title"] {
   border-bottom-left-radius: 15px;
 }
 
-.Products, .Us, .Components, .Company {
+.Products, .Us, .Components, .Company, .Contact, .Location {
   background-color: #f7cf18;
 }
 
@@ -719,5 +719,188 @@ body{
 
 .Article .Values .vision-text, .Article .Values .mission-text {
   font-size: 16px;
+}
+
+.Contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 84.3%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.Contact-content {
+  position: relative;
+  width: 80%;
+  margin-left: 8%;
+}
+
+.Contact-title {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.Contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  position: relative;
+}
+
+.Contact-input {
+  line-height: 3em;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 32%;
+  margin-bottom: 2%;
+  padding-left: 4%;
+  color: #201E1E;
+}
+
+.Contact-input:nth-of-type(4), .Contact-input:nth-of-type(5) {
+  width: 48%;
+}
+
+.Contact-input::-webkit-input-placeholder {
+  color: #000000;
+  font-weight: 500;
+}
+
+.Contact-input:-ms-input-placeholder {
+  color: #000000;
+  font-weight: 500;
+}
+
+.Contact-input::-ms-input-placeholder {
+  color: #000000;
+  font-weight: 500;
+}
+
+.Contact-input::placeholder {
+  color: #000000;
+  font-weight: 500;
+}
+
+.Contact-button {
+  width: 20%;
+  border-radius: 25px;
+  padding-left: 0;
+  color: #f7cf18;
+  background-color: #201E1E;
+}
+
+.Contact-tag {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 68.75px;
+  margin-top: 2%;
+}
+
+.Location {
+  width: 55.2%;
+  height: 38.5vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.Location-title {
+  margin: 0;
+}
+
+.Location-address {
+  font-size: 16px;
+  margin: 0.8em 0;
+  border-left: 3px solid black;
+  padding-left: 1em;
+}
+
+.Location-content {
+  position: relative;
+  left: -15%;
+  top: 5%;
+}
+
+.Location-tag {
+  font-size: 68.75px;
+  line-height: 68.75px;
+  position: absolute;
+  margin: 0;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+  -webkit-transform-origin: 32% -149%;
+          transform-origin: 32% -149%;
+  bottom: 0;
+  right: 0;
+}
+
+.Location-map {
+  display: inline-block;
+  position: relative;
+  height: 35vw;
+  width: 98.7%;
+  background-color: lightgray;
+}
+
+.Phone {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 60.3%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.Phone-title {
+  width: 100%;
+  text-align: center;
+}
+
+.Phone-info {
+  width: 13em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Phone .Phone-icon, .Phone .Message-icon {
+  font-size: 40px;
+}
+
+.Phone p {
+  font-size: 16px;
+  margin: 0;
+  margin-left: 1em;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

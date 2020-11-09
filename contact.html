@@ -24,56 +24,61 @@
                     </a>
                 </li>
                 <li class="Header-item">
-                    <a href="./company.html" class="Header-link">
+                    <a href="" class="Header-link">
                         Empresa
                     </a>
                 </li>
                 <li class="Header-item">
-                    <a href="contact.html" class="Header-link">
+                    <a href="" class="Header-link">
                         Contactos
                     </a>
-                </li>                
+                </li>
             </ul>
             <div class="Header-search">
                 <button type="submit" class="Header-searchButton" name="search" id="search"><i
                         class="fa fa-search"></i></button>
-                <input class="Header-searchText" id="Search" type="text" name="q" placeholder="Buscar">
+                <input class="Contact-input" class="Header-searchText" id="Search" type="text" name="q"
+                    placeholder="Buscar">
             </div>
         </nav>
     </header>
     <main class="Content">
         <article class="Article">
-            <div class="Article-grid">                
-                <section class="Banner">
-                    <img class="Banner-image" src="./images/Mask_Group_1.png" alt="Machines">
-                    <h1 class="Banner-title">Te brindamos las herramientas para construir el futuro</h1>
-                </section>
-                <section class="Products">
-                    <h4 class="Products-subtitle">Productos destacados</h4>
-                    <h3 class="Products-title">Cilindros hidráulicos y gatos</h3>
-                    <div class="Products-image">
-                        <img src="./images/cilindros_y_gatos.png" alt="Cilindros y gatos" class="Big-image">
-                    </div>
-                    <p class="Products-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime non ab in
-                        iusto nam? Molestias a temporibus laborum veniam quos nisi provident omnis totam earum enim, hic
-                        similique in ipsam.</p>
-                        <h2 class="Products-tag Big-font">PRODUCTOS</h2>
-                    </section>
-            </div>
-            <section class="Us">
-                <h2 class="Us-tag Big-font">NOSOTROS</h2>
-                <div class="Us-content">
-                    <h3 class="Us-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sunt autem
-                        ut beatae expedita sit.</h3>
-                    <p class="Us-text">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem inventore saepe
-                        cum mollitia quos eius dignissimos illum, nisi aliquam blanditiis. Dolorem maiores adipisci
+            <section class="Contact">
+                <div class="Contact-content">
+                    <h3 class="Contact-title">Formulario de contacto</h3>
+                    <form action="" class="Contact-form">
+                        <input class="Contact-input" type="text" name="name" placeholder="Nombre" tabindex="1">
+                        <input class="Contact-input" type="text" name="lastNambe" id="" placeholder="Apellido"
+                            tabindex="2">
+                        <input class="Contact-input" type="number" name="phone" placeholder="Telefono" tabindex="3">
+                        <input class="Contact-input" type="text" name="company" placeholder="Empresa" tabindex="4">
+                        <input class="Contact-input" type="email" name="email" placeholder="Correo electrónico">
+                        <input class="Contact-input Contact-button" type="button" value="Enviar">
+                    </form>
+                </div>
+                <h2 class="Big-font Contact-tag">CONTACTO</h2>
+            </section>
+            <section class="Location">
+
+                <div class="Location-content">
+                    <h3 class="Location-title">Ubicación tienda fisica</h3>
+                    <p class="Location-address">
+                        CALLE 34 # 2C-66 / BARRIO PORVENIR SANTIGO DE CALI
                     </p>
-                    <div class="Us-video">
-                        <video src="https://www.youtube.com/watch?v=OYgqvo4nomU&ab_channel=RobynAdeleAnderson" controls>
-                            <code>video</code>
-                        </video>
-                    </div>
+                    <div class="Location-map"></div>
+                </div>
+                <h2 class="Location-tag Big-font">TIENDA</h2>
+            </section>
+            <section class="Phone">
+                <h3 class="Phone-title">Teléfonos y contactos</h3>
+                <div class="Phone-info">
+                    <i class="fas fa-phone-square-alt Phone-icon"></i>
+                    <p>(+57) 3797837 / (+57) 322 465 7319</p>
+                </div>
+                <div class="Phone-info">
+                    <i class="fas fa-mail-bulk Message-icon"></i>
+                    <p>financiero@dicar.co</p>
                 </div>
             </section>
         </article>

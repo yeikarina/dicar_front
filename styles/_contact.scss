@@ -1,0 +1,117 @@
+.Contact{    
+    display: flex;
+    width: 84.3%;
+    flex-flow: column wrap;
+    position: relative;
+    margin-bottom: 5%;
+    &-content{
+        position: relative;
+        width: 80%;
+        margin-left: 8%;
+    }
+    &-title{
+        align-self: flex-start;
+    }
+    &-form{
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        width: 100%;
+        position: relative;
+    }
+    &-input{
+        line-height: 3em;
+        border-radius: 10px;
+        border: none;
+        box-sizing: border-box;
+        width: 32%;
+        margin-bottom: 2%;
+        padding-left: 4%;
+        color: #201E1E;
+    }
+    &-input:nth-of-type(4),&-input:nth-of-type(5){
+        width: 48%;
+    }
+    &-input::placeholder{
+        color: #000000;
+        font-weight: 500;
+    }
+    &-button{
+        width: 20%;
+        border-radius: 25px;
+        padding-left: 0;
+        color: #f7cf18;
+        background-color: #201E1E;
+    }
+    &-tag{
+        align-self: center;
+        font-size: 68.75px;
+        margin-top: 2%;
+    }
+}
+.Location{
+    width: 55.2%;
+    height: 38.5vw;
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: 10%;
+    &-title{
+        margin: 0;
+    }
+    &-address{
+        font-size: 16px;
+        margin: 0.8em 0;
+        border-left: 3px solid black;
+        padding-left: 1em;
+    }
+    &-content{
+        position: relative;
+        left: -15%;
+        top: 5%;
+    }
+    &-tag{
+        font-size: 68.75px;
+        line-height: 68.75px;
+        position: absolute;
+        margin: 0;
+        transform: rotateZ(-90deg);
+        transform-origin: 32% -149%;
+        bottom: 0;
+        right: 0;
+    }
+    &-map{
+        display: inline-block;
+        position: relative;
+        height: 35vw;
+        width: 98.7%;
+        background-color: lightgray;
+    }
+}
+.Phone{
+    align-self: center;
+    width: 60.3%;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    &-title{
+        width: 100%;
+        text-align: center;
+    }
+    &-info{
+        width: pxToem(16, 208) * 1em;
+        display: flex;
+        flex-flow: row nowrap;
+        box-sizing: border-box;
+    }
+    .Phone-icon, .Message-icon{
+        font-size: 40px;
+    }
+    p{
+        font-size: 16px;
+        margin: 0;
+        margin-left: 1em;
+        display: inline-block;
+    }
+}
