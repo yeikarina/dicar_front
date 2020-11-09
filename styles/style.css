@@ -1005,4 +1005,59 @@ tr {
 td:first-child {
   width: 19%;
 }
+
+.Cards {
+  width: 82.6%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.Cards .Card-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 47.1%;
+  background-color: #f7cf18;
+  padding-top: 2.5em;
+  margin-top: 4%;
+}
+
+.Cards .Card-product .Card-image {
+  width: 87.5%;
+}
+
+.Cards .Card-product .Card-title {
+  width: 87.5%;
+  font-size: 27.5px;
+  margin-bottom: 0.5em;
+}
+
+.Cards .Card-product .Card-text {
+  width: 87.5%;
+  font-size: 16px;
+  margin: 0;
+}
+
+.Cards .Card-product .Watch-Products {
+  margin-bottom: 3em;
+}
 /*# sourceMappingURL=style.css.map */
