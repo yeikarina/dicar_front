@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/be05b69b52.js" crossorigin="anonymous"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="./scripts/script.js"></script>
     <title>DICAR</title>
 </head>
 
@@ -24,12 +29,12 @@
                     </a>
                 </li>
                 <li class="Header-item">
-                    <a href="" class="Header-link">
+                    <a href="./company.html" class="Header-link">
                         Empresa
                     </a>
                 </li>
                 <li class="Header-item">
-                    <a href="" class="Header-link">
+                    <a href="#" class="Header-link">
                         Contactos
                     </a>
                 </li>
@@ -66,7 +71,7 @@
                     <p class="Location-address">
                         CALLE 34 # 2C-66 / BARRIO PORVENIR SANTIGO DE CALI
                     </p>
-                    <div class="Location-map"></div>
+                    <div class="Location-map" id="map"></div>
                 </div>
                 <h2 class="Location-tag Big-font">TIENDA</h2>
             </section>
