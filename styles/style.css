@@ -481,8 +481,8 @@ body{
   height: 100%;
   position: relative;
   border: 1px solid black;
-  margin-left: 1em;
-  margin-right: 2em;
+  margin-left: 3%;
+  margin-right: 5%;
 }
 
 .Article .Products-outLeft .Big-image {
@@ -504,7 +504,7 @@ body{
 .Article .Products-outLeft .Products-text {
   position: relative;
   width: 49%;
-  padding-right: 3%;
+  padding-right: 7%;
   font-size: 16px;
 }
 
@@ -555,6 +555,9 @@ body{
 .Article .Components-text {
   margin-top: 0;
   font-size: 16px;
+  width: 100%;
+  max-width: 40em;
+  min-width: 63%;
 }
 
 .Article .Components-image {
@@ -582,10 +585,11 @@ body{
 
 .Article .Hidraulic-title {
   width: 100%;
+  text-align: center;
 }
 
 .Article .Hidraulic-text {
-  width: 100%;
+  width: 85%;
   font-size: 16px;
 }
 
