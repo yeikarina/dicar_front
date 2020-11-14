@@ -27,9 +27,9 @@ span.Watch-Products .link {
 }
 
 .Big-font {
-  font-size: 110px;
+  font-size: 9vw;
   color: #fdf1b9;
-  line-height: 82px;
+  line-height: 6vw;
   letter-spacing: 0px;
   margin-bottom: 0;
 }
@@ -91,7 +91,7 @@ h3[class*="title"] {
 .Header-items {
   width: 70%;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 16px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +261,7 @@ body{
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   background-color: #fdf1b9;
+  overflow: hidden;
 }
 
 .Article-grid {
@@ -295,7 +296,7 @@ body{
   left: 0%;
   display: inline-block;
   position: absolute;
-  font-size: 55px;
+  font-size: 5vw;
   color: #FFFFFF;
   background-color: #343232;
   opacity: 0.91;
@@ -329,7 +330,7 @@ body{
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 47em;
+  min-width: 32em;
   width: 67.2%;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -370,6 +371,7 @@ body{
   padding-right: 5%;
   margin: 0;
   width: 50%;
+  font-size: 16px;
 }
 
 .Article .Products .Products-tag {
@@ -378,6 +380,7 @@ body{
 
 .Us {
   width: 71%;
+  min-width: 32em;
   min-height: 55.9%;
   height: 55.9%;
   -ms-flex-item-align: start;
@@ -398,7 +401,7 @@ body{
   position: relative;
   top: -1.3em;
   margin: 0;
-  padding-right: 5.31977em;
+  padding-right: 17vw;
   margin-left: 1.45349em;
 }
 
@@ -406,7 +409,7 @@ body{
   border-left: 3px solid black;
   padding-left: 0.5em;
   margin-bottom: 2em;
-  padding-right: 7.625em;
+  padding-right: 17vw;
   margin-left: 1.45349em;
 }
 
@@ -422,8 +425,8 @@ body{
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  left: 27.84507%;
-  width: 113%;
+  left: 18.4vw;
+  width: 80vw;
   height: 100%;
 }
 
@@ -510,7 +513,6 @@ body{
 
 .Article .Products-tag {
   position: relative;
-  font-size: 68.75px;
   text-align: center;
 }
 

@@ -10,6 +10,7 @@
     display: flex;
     flex-flow: column nowrap;
     background-color: #fdf1b9;
+    overflow: hidden;
     &-grid{
         position: relative;
         display: grid;
@@ -34,7 +35,7 @@
             left: 0%;
             display: inline-block;
             position: absolute;
-            font-size: 55px;
+            font-size: 5vw;
             color: #FFFFFF;
             background-color: #343232;
             opacity: 0.91;
@@ -55,7 +56,7 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        min-width: 47em;
+        min-width: 32em;
         width: 67.2%;
         align-self: flex-end;
         margin-bottom: 10%;
@@ -89,6 +90,7 @@
             padding-right: 5%;
             margin: 0;
             width: 50%;
+            font-size: 16px;
         }
         .Products-tag{          
             margin: 0.5em auto 0;
@@ -98,6 +100,7 @@
 
 .Us{
     width: 71%;
+    min-width: 32em;
     min-height: 55.9%;
     height: 55.9%;
     align-self: flex-start;
@@ -112,14 +115,14 @@
         position: relative;
         top: -1.3em;
         margin: 0;      
-        padding-right: pxToem(34.4, 183) * 1em;
+        padding-right: 17vw;
         margin-left: pxToem(34.4, 50) * 1em;
     }
     &-text{        
         border-left: 3px solid black;
         padding-left: 0.5em;
         margin-bottom: 2em;        
-        padding-right: pxToem(24, 183) * 1em;
+        padding-right: 17vw;
         margin-left: pxToem(34.4, 50) * 1em;
     }
     &-content{    
@@ -127,8 +130,8 @@
         flex-flow: column nowrap;
         justify-content: flex-end;
         position: relative;
-        left: 27.84507%;
-        width: 113%;
+        left: 18.4vw;
+        width: 80vw;
         height: 100%;
         .Us-video{
             width: 100%;
