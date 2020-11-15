@@ -5,21 +5,31 @@
         justify-self: left;
         position: relative;
         width: 80%;
-        display: inline-block;
-        min-height: pxToem( 16, 430) * 1em;
+        display: inline-block;                 
+        font-size: 5.625vw;
+        min-height: 7em;
+        padding-bottom: 5%;
+        box-sizing: border-box;
         .Company-content{
             width: 82.2%;
-            margin-left: 10%;
+            margin-left: 13%;
 
             .Company-text{
                 font-size: 16px;
             }
         }
+        .Company-tag{
+            color: #fdf1b9;            
+            font-size: 5.625vw;
+            transform: rotateZ(90deg);
+            transform-origin: 8% 43%;
+            position: absolute;
+        }
     }
     .Values{
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: center;  
         .Company-mission, .Company-vision{
             display: flex;
             flex-flow: row wrap;
@@ -34,7 +44,8 @@
                 padding: 0;
                 box-sizing: border-box;
             }
-            .Values-content{
+            .Values-content{                      
+                margin-top: 5%;
                 border-left: 0.2em solid black;
                 padding-left: 2.8%;
                 margin-left: 7.9%;

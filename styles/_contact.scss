@@ -20,7 +20,7 @@
         position: relative;
     }
     &-input{
-        line-height: 3em;
+        line-height: 2.5em;
         border-radius: 10px;
         border: none;
         box-sizing: border-box;
@@ -38,6 +38,7 @@
     }
     &-button{
         width: 20%;
+        min-width: 8em;
         border-radius: 25px;
         padding-left: 0;
         color: #f7cf18;
@@ -51,7 +52,9 @@
 }
 .Location{
     width: 55.2%;
+    min-width: 32em;
     height: 38.5vw;
+    min-height: 30em;
     align-self: flex-end;
     position: relative;
     margin-bottom: 10%;
@@ -75,7 +78,7 @@
         position: absolute;
         margin: 0;
         transform: rotateZ(-90deg);
-        transform-origin: 32% -149%;
+        transform-origin: 19% -241%;
         bottom: 0;
         right: 0;
     }

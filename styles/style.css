@@ -529,11 +529,17 @@ body{
   text-align: center;
 }
 
+.Article .Products .Right-tag {
+  font-size: 5.625vw;
+  color: #fdf1b9;
+  line-height: 49.75px;
+}
+
 .Article .Components {
   width: 77.5%;
   min-width: 32em;
-  min-height: 55.9%;
-  height: 55.9%;
+  min-height: 60vw;
+  height: 60%;
   -ms-flex-item-align: start;
       align-self: flex-start;
   position: relative;
@@ -541,13 +547,19 @@ body{
 
 .Article .Components-tag {
   color: #FFFFFF;
-  font-size: 68.75px;
+  font-size: 5.625vw;
   position: absolute;
   left: 0%;
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
-  -webkit-transform-origin: 10% 19%;
-          transform-origin: 10% 19%;
+  -webkit-transform-origin: 4% 52%;
+          transform-origin: 4% 52%;
+}
+
+.Article .Components .Long-tag {
+  color: #fdf1b9;
+  -webkit-transform-origin: 8% 12%;
+          transform-origin: 8% 12%;
 }
 
 .Article .Components-content {
@@ -648,6 +660,8 @@ body{
 
 .Article .Tools .Hidraulic-product {
   width: 23.3333%;
+  min-width: 10em;
+  padding: 0.5em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -692,16 +706,30 @@ body{
   position: relative;
   width: 80%;
   display: inline-block;
-  min-height: 26.875em;
+  font-size: 5.625vw;
+  min-height: 7em;
+  padding-bottom: 5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .Article section.Company .Company-content {
   width: 82.2%;
-  margin-left: 10%;
+  margin-left: 13%;
 }
 
 .Article section.Company .Company-content .Company-text {
   font-size: 16px;
+}
+
+.Article section.Company .Company-tag {
+  color: #fdf1b9;
+  font-size: 5.625vw;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+  -webkit-transform-origin: 8% 43%;
+          transform-origin: 8% 43%;
+  position: absolute;
 }
 
 .Article .Values {
@@ -743,6 +771,7 @@ body{
 }
 
 .Article .Values .Company-mission .Values-content, .Article .Values .Company-vision .Values-content {
+  margin-top: 5%;
   border-left: 0.2em solid black;
   padding-left: 2.8%;
   margin-left: 7.9%;
@@ -803,7 +832,7 @@ body{
 }
 
 .Contact-input {
-  line-height: 3em;
+  line-height: 2.5em;
   border-radius: 10px;
   border: none;
   -webkit-box-sizing: border-box;
@@ -840,6 +869,7 @@ body{
 
 .Contact-button {
   width: 20%;
+  min-width: 8em;
   border-radius: 25px;
   padding-left: 0;
   color: #f7cf18;
@@ -856,7 +886,9 @@ body{
 
 .Location {
   width: 55.2%;
+  min-width: 32em;
   height: 38.5vw;
+  min-height: 30em;
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: relative;
@@ -887,8 +919,8 @@ body{
   margin: 0;
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
-  -webkit-transform-origin: 32% -149%;
-          transform-origin: 32% -149%;
+  -webkit-transform-origin: 19% -241%;
+          transform-origin: 19% -241%;
   bottom: 0;
   right: 0;
 }

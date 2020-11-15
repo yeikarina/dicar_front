@@ -47,24 +47,32 @@
         }
         &-tag{
             position: relative;
-            //font-size: 68.75px;
             text-align: center;
+        }
+        .Right-tag{            
+            font-size: 5.625vw;
+            color: #fdf1b9;
+            line-height: 49.75px;
         }
     }
     .Components{
         width: 77.5%;
         min-width: 32em;
-        min-height: 55.9%;
-        height: 55.9%;
+        min-height: 60vw;
+        height: 60%;
         align-self: flex-start;
         position: relative;    
         &-tag{
             color: #FFFFFF;
-            font-size: 68.75px;
+            font-size: 5.625vw;
             position: absolute;     
             left: 0%;   
             transform: rotateZ(90deg);
-            transform-origin: 10% 19%;
+            transform-origin: 4% 52%;
+        }
+        .Long-tag{
+            color: #fdf1b9;
+            transform-origin: 8% 12%;
         }
         &-content{    
             display: flex;
@@ -132,6 +140,8 @@
     .Tools{
         .Hidraulic-product{
             width: 23.3333%;
+            min-width: 10em;
+            padding: 0.5em;
             justify-content: flex-end;
             .product-title{
                 height: 50%;
