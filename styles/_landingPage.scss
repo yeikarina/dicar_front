@@ -14,7 +14,7 @@
     &-grid{
         position: relative;
         display: grid;
-        grid-template-rows: auto pxToem(16, 51) * 1em auto;
+        grid-template-rows: auto pxToem(16, 35) * 1em auto;
         grid-template-columns: 1fr;
         width: 100%;
         justify-items: right;
@@ -35,12 +35,12 @@
             left: 0%;
             display: inline-block;
             position: absolute;
-            font-size: 5vw;
+            font-size: 4vw;
             color: #FFFFFF;
             background-color: #343232;
             opacity: 0.91;
             margin: 0;
-            padding: 8% 30% 0% 8%;
+            padding: 8% 43% 0% 8%;
             height: 100%;
             width: 100%;
             box-sizing: border-box;
@@ -115,15 +115,15 @@
         position: relative;
         top: -1.3em;
         margin: 0;      
-        padding-right: 17vw;
-        margin-left: pxToem(34.4, 50) * 1em;
+        padding-right: 16vw;
+        margin-left: 1.5vw;
     }
     &-text{        
         border-left: 3px solid black;
         padding-left: 0.5em;
         margin-bottom: 2em;        
-        padding-right: 17vw;
-        margin-left: pxToem(34.4, 50) * 1em;
+        padding-right: 16vw;
+        margin-left: 1.5vw;
     }
     &-content{    
         display: flex;
@@ -142,6 +142,18 @@
                 align-self: flex-end;
                 width: 100%;
             }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .Us{
+        &-title{
+            position: relative;
+            top: 0;
+            margin: 0;   
+            margin-top: 3%;   
+            padding-right: 16vw;
+            margin-left: 1.5vw;
         }
     }
 }
