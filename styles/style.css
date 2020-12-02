@@ -394,6 +394,7 @@ body{
           transform: rotateZ(90deg);
   -webkit-transform-origin: 10% 19%;
           transform-origin: 10% 19%;
+  font-size: 7.7vw;
 }
 
 .Us-title {
@@ -929,6 +930,7 @@ body{
   display: inline-block;
   position: relative;
   height: 35vw;
+  min-height: 373px;
   width: 98.7%;
   background-color: lightgray;
 }
