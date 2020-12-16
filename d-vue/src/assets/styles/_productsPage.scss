@@ -1,0 +1,177 @@
+.Article{
+    section.No-flex{
+        display: inline-block;
+    }
+    .Products{
+        margin-bottom: 11%;
+        width: 65%;
+        &-outLeft{
+            width: 119.7%;
+            display: flex;
+            flex-flow: row wrap;
+            position: relative;    
+            align-items: center;        
+            right: 19.7%;           
+            .Products-images{
+                width: 9.7%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                position: relative;
+                margin-left: 1.8%;
+                margin-right: 5%;
+            }
+            .Big-image{
+                width: 39.9%;  
+                height: auto;              
+                position: relative;                
+                box-sizing: border-box;
+            }
+            .small{
+                position: relative;
+                width: 100%;
+                margin: 0;
+                display: inline;
+                padding: 0;
+            }
+            .small:nth-of-type(2){
+                margin: 16.2% 0;
+            }
+            .Products-text{
+                position: relative;
+                width: 41.5%;
+                padding-right: 5%;
+                font-size: 16px;
+            }
+
+        }
+        &-tag{
+            position: relative;
+            text-align: center;
+        }
+        .Right-tag{            
+            font-size: 5.625vw;
+            color: #fdf1b9;
+            line-height: 49.75px;
+        }
+    }
+    .Components{
+        width: 77.5%;
+        min-width: 32em;
+        min-height: 60vw;
+        height: 60%;
+        align-self: flex-start;
+        position: relative;    
+        &-tag{
+            color: #FFFFFF;
+            font-size: 5.625vw;
+            position: absolute;     
+            left: 0%;   
+            transform: rotateZ(90deg);
+            transform-origin: 4% 52%;
+        }
+        .Long-tag{
+            color: #fdf1b9;
+            transform-origin: 8% 12%;
+        }
+        &-content{    
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            position: relative;
+            top: -4em;
+            left: 13.05%;
+            width: 75%;
+            height: 100%;
+        }
+        &-text{
+            margin-top: 0;
+            font-size: 16px;
+            width: 100%;
+            max-width: 40em;
+            min-width: 63%;
+        }
+        &-image{
+            width: 63%;
+        }
+    }
+    .Hidraulic{
+        align-self: center;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;        
+        width: 85.3%;
+        box-sizing: border-box;
+        justify-content: space-evenly;
+        &-title{
+            width: 100%;
+            text-align: center;
+        }
+        &-text{
+            width: 85%;
+            font-size: 16px;
+        }
+        &-product{
+            width: 35%;
+            position: relative;
+            display: flex;
+            flex-flow: column nowrap;
+            .product-title{
+                font-size: 27.5;
+                font-weight: 700;
+            }
+            .product-image{
+                width: 100%;
+            }
+        }
+        span.Watch-Products{
+            margin-bottom: 4em;
+        }
+    }
+    .Lifting{
+        width: 67%;
+        &-image{
+            left: -10%;
+        }
+        .Products-text{
+            font-size: 16px;
+        }
+    }
+    .Tools{
+        .Hidraulic-product{
+            width: 23.3333%;
+            min-width: 10em;
+            padding: 0.5em;
+            justify-content: flex-end;
+            .product-title{
+                height: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Article{
+        .Products{
+            &-outLeft{
+                width: 100%;
+                right: 5%;
+                flex-wrap: wrap;
+                .Big-image{
+                    width: 70%;
+                }
+                .Products-images{
+                   width: 17%;
+                }
+                .Products-text{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-right: 0;
+                    margin-top: 2em;
+                    left: 6%;
+                }
+            }
+        }
+    }
+}

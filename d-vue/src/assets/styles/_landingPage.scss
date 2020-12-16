@@ -1,0 +1,160 @@
+@function emTopx($fontSize, $em){
+    @return $fontSize * $em;
+}
+
+@function pxToem($fontSize, $px){
+    @return $px / $fontSize;
+}
+.Article{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #fdf1b9;
+    overflow: hidden;
+    &-grid{
+        position: relative;
+        display: grid;
+        grid-template-rows: auto pxToem(16, 35) * 1em auto;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: right;
+    }
+    .Banner{
+        width: 100%;
+        position: relative;
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+        &-image{
+            width: 100%;
+        }        
+        &-products-image{
+            //opacity: 0;
+        }
+        &-title{
+            top: 0%;
+            left: 0%;
+            display: inline-block;
+            position: absolute;
+            font-size: 4vw;
+            color: #FFFFFF;
+            background-color: #343232;
+            opacity: 0.91;
+            margin: 0;
+            padding: 8% 43% 0% 8%;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        & h1.Background-none{
+           background-color: transparent;
+        }
+    }
+    .Products{
+        grid-row: 2 / 4;
+        grid-column: 1 / 2;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        min-width: 32em;
+        width: 67.2%;
+        align-self: flex-end;
+        margin-bottom: 10%;
+        &-image{
+            display: inline-block;
+            position: relative;
+            width: 50%;     
+            margin: 0;
+            left: -5%;
+            .Big-image{
+                width: 100%;
+            }
+        }
+        
+        .Products-subtitle{
+            width: 50%;
+            border-bottom: 3px solid black;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            line-height: 2em;
+        }
+        .Products-title{
+            width: 100%;
+            position: relative;            
+            left: -5%;
+        }
+        .Products-text{
+            display: inline-block;
+            box-sizing: border-box;
+            padding-right: 5%;
+            margin: 0;
+            width: 50%;
+            font-size: 16px;
+        }
+        .Products-tag{          
+            margin: 0.5em auto 0;
+        }
+    }
+}
+
+.Us{
+    width: 71%;
+    min-width: 32em;
+    min-height: 55.9%;
+    height: 55.9%;
+    align-self: flex-start;
+    position: relative;    
+    &-tag{
+        position: absolute;     
+        left: 0%;   
+        transform: rotateZ(90deg);
+        transform-origin: 10% 19%;
+        font-size: 7.7vw;
+    }
+    &-title{
+        position: relative;
+        top: -1.3em;
+        margin: 0;      
+        padding-right: 16vw;
+        margin-left: 1.5vw;
+    }
+    &-text{        
+        border-left: 3px solid black;
+        padding-left: 0.5em;
+        margin-bottom: 2em;        
+        padding-right: 16vw;
+        margin-left: 1.5vw;
+    }
+    &-content{    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        position: relative;
+        left: 18.4vw;
+        width: 80vw;
+        height: 100%;
+        .Us-video{
+            width: 100%;
+            display: flex;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            video{
+                align-self: flex-end;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .Us{
+        &-title{
+            position: relative;
+            top: 0;
+            margin: 0;   
+            margin-top: 3%;   
+            padding-right: 16vw;
+            margin-left: 1.5vw;
+        }
+    }
+}
