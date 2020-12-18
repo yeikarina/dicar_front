@@ -1,30 +1,24 @@
-import data from '@/assets/data/data.json';
 import NavBar from '@/components/NavBar.vue';
 <template>
-<Navbar/>
+  <Navbar />
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
   <router-view />
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-
 export default {
   components: {
     Navbar,
     Footer
-  },
+  }
 };
 </script>
 
-<style lang="scss">
-
-
-
-</style>
+<style lang="scss"></style>

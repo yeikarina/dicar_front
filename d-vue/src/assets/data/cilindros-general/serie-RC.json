@@ -1,0 +1,90 @@
+{
+    "serie": "RC",
+    "titulo": "Cilindros de simple acción",
+    "descripcion": [
+        "Anillo Dorado absorbe las carbas excéntricas sin desgastar las piezas del cilindro por rosamiento",
+        "Las roscas del collar y del émbolo, así como los orificios de montaje en la base facilitan la fijación de piezas (en la mayoría de los modelos)",
+        "Diseñado para usarse en cualquier posición",
+        "La aleación de acero de alta resistencia ofrece mayor durabilidad",
+        "Niquelado disponible en la mayoría de los modelos (para obtener más detalles, pongase en contacto con Enerpac)",
+        "Resortes de retorno aptos para trabajos pesados",
+        "Acabado de esmalte horneado para una mayor resistencia a la corrosión",
+        "Todos los modelos incluyen acople CR-400 y tapa guardapolvo"
+    ],
+    "medidas": [
+        "toneladas",
+        "(pulg)",
+        "*",
+        "pulg2",
+        "pulg3",
+        "(pulg)",
+        "(libras)"
+    ],
+    "productos": [{
+            "numero_serie": 50,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 0.63,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 0.62,
+                "altura": 1.63,
+                "peso": 2.2
+            }
+        },
+        {
+            "numeroSerie": 51,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 1,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 0.99,
+                "altura": 4.34,
+                "peso": 2.3
+            }
+        },
+        {
+            "numeroSerie": 53,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 3,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 2.98,
+                "altura": 6.5,
+                "peso": 3.3
+            }
+        },
+        {
+            "numeroSerie": 55,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 5,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 4.97,
+                "altura": 8.5,
+                "peso": 4.1
+            }
+        },
+        {
+            "numeroSerie": 57,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 7,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 6.96,
+                "altura": 10.75,
+                "peso": 5.3
+            }
+        },
+        {
+            "numeroSerie": 59,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 9.13,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 9.07,
+                "altura": 12.75,
+                "peso": 6.1
+            }
+        }
+    ]
+}

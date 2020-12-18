@@ -187,10 +187,16 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Products",
+  computed: {
+    ...mapState(["title", "serieRc"]),
+  },
+  components: {
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>
