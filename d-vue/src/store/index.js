@@ -1,12 +1,23 @@
 import { createStore } from "vuex";
 import serieRc from "@/assets/data/cilindros-general/serie-RC.json";
+import serieClp from "@/assets/data/cilindros-general/serie-CLP.json";
+
+let cilindros = [serieRc, serieClp];
 
 export default createStore({
     state: {
-        title: "this one",
-        serieRc: serieRc
+        producto: "",
+        productos: [cilindros],
+        selectProduct: [],
     },
-    mutations: {},
+    mutations: {
+        changeSelector(state, payload) {
+            state.selectProduct = state.productos[payload.selectProduct];
+            state.producto = payload.producto;
+            console.log(payload.producto);
+        },
+    },
     actions: {},
-    modules: {}
+    getters: {},
+    modules: {},
 });

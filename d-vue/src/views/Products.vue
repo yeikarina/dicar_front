@@ -43,7 +43,11 @@
               y sistemas de elevación, con soporte total y disponible a través
               de la cadena mundial de distribuidores más extensa.
               <span class="Watch-Products">
-                <a href="./productCards.html" class="link">Ver productos</a>
+                <button @click="changeSelector(0, 'cilindros')" class="link">
+                  Ver productos
+                </button>
+
+                <!-- <a href="./productCards.html" class="link">Ver productos</a> -->
               </span>
             </p>
           </div>
@@ -187,15 +191,24 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
-
 export default {
   name: "Products",
-  computed: {
-    ...mapState(["title", "serieRc"]),
+  computed: {},
+  methods: {
+    changeSelector(selectProduct, producto) {
+      let payload = { selectProduct, producto };
+      this.$store.commit("changeSelector", payload);
+      this.$router.push({
+        name: "lista",
+        params: {
+          producto: producto,
+        },
+      });
+      // console.log(this.$store.state.selectProduct);
+      // console.log(...mapState("selector"))
+    },
   },
-  components: {
-  }
+  components: {},
 };
 </script>
 
