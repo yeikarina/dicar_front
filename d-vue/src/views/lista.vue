@@ -14,7 +14,7 @@
           v-for="(item, index) in $store.state.selectProduct"
           :key="index"
           :info="item"
-          @click="seleccionar(item)"
+          @click="seleccionar(item, index)"
         />
       </section>
     </article>
@@ -32,16 +32,30 @@ export default {
     pCard,
   },
   methods: {
-    seleccionar(item) {
-      this.$router.push({name: 'product', params: {
-        producto: this.$store.state.producto,
-        serie: item.serie
-      }});
+    seleccionar(item, index) {
+      this.$router.push({
+        name: "product",
+        params: {
+          producto: this.$store.state.producto,
+          serie: item.serie,
+        },
+      });
+
+      this.$store.commit("chooseProduct", index);
     },
+    
   },
   computed: {},
 };
 </script>
-
-<style>
+<style lang="scss" scoped>
+.Cards {
+    width: 82.6%;
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5%;
+}
 </style>

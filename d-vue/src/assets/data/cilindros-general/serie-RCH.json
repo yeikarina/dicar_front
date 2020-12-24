@@ -1,0 +1,177 @@
+{
+    "serie": "RCH",
+    "titulo": "Cilindros de émbolo hueco",
+    "descripcion": [
+        "Diseño de émbolo hueco que permite tanto fuerzas de tiro como de empuje",
+        "Retorno por resorte de simple acción",
+        "El tubo central flotante niquelado en los modelos de más de 20 toneladas prolonga la vida útil",
+        "Acabado de esmalte horneado para una mayor resistencia a la corrosión",
+        "Roscas del collar que facilitan la fijación de las piezas",
+        "El modelo RCH-120 incluye acople AR-630 y tiene una conexión de 1/4 NPTF",
+        "Los modelos RCH-121 y RCH-1211 tienen un reductor FZ-1630 y un acople AR-630. Todos los otros modelos llevan un acople CR-400"
+    ],
+    "medidas": [
+        "toneladas",
+        "(pulg)",
+        "*",
+        "pulg2",
+        "pulg3",
+        "(pulg)",
+        "(libras)"
+    ],
+    "productos": [{
+            "numeroSerie": 120,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "13",
+                "carrera": 0.31,
+                "area_efectiva_cilindro": 2.76,
+                "volumen_aceite": 0.86,
+                "altura_collar": 2.19,
+                "altura_extendido": 2.5,
+                "diametro_externo": 2.75,
+                "diametro_hueco_central": 0.77,
+                "peso": 3.2
+            }
+        },
+        {
+            "numeroSerie": 121,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "13",
+                "carrera": 1.63,
+                "area_efectiva_cilindro": 2.76,
+                "volumen_aceite": 4.49,
+                "altura_collar": 4.75,
+                "altura_extendido": 6.38,
+                "diametro_externo": 2.75,
+                "diametro_hueco_central": 0.77,
+                "peso": 6.2
+            }
+        },
+        {
+            "numeroSerie": 1211,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "13",
+                "carrera": 1.63,
+                "area_efectiva_cilindro": 2.76,
+                "volumen_aceite": 4.49,
+                "altura_collar": 4.75,
+                "altura_extendido": 6.38,
+                "diametro_externo": 2.75,
+                "diametro_hueco_central": 0.77,
+                "peso": 6.2
+            }
+        },
+        {
+            "numeroSerie": 123,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "13",
+                "carrera": 3,
+                "area_efectiva_cilindro": 2.76,
+                "volumen_aceite": 8.29,
+                "altura_collar": 7.25,
+                "altura_extendido": 10.25,
+                "diametro_externo": 2.75,
+                "diametro_hueco_central": 0.77,
+                "peso": 9.8
+            }
+        },
+        {
+            "numeroSerie": 202,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "20",
+                "carrera": 2,
+                "area_efectiva_cilindro": 4.72,
+                "volumen_aceite": 9.46,
+                "altura_collar": 6.38,
+                "altura_extendido": 8.38,
+                "diametro_externo": 3.88,
+                "diametro_hueco_central": 1.06,
+                "peso": 17
+            }
+        },
+        {
+            "numeroSerie": 206,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "20",
+                "carrera": 6.1,
+                "area_efectiva_cilindro": 4.72,
+                "volumen_aceite": 28.67,
+                "altura_collar": 12.05,
+                "altura_extendido": 18.11,
+                "diametro_externo": 3.88,
+                "diametro_hueco_central": 1.06,
+                "peso": 31
+            }
+        },
+        {
+            "numeroSerie": 302,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "30",
+                "carrera": 2.5,
+                "area_efectiva_cilindro": 7.22,
+                "volumen_aceite": 18.05,
+                "altura_collar": 7.03,
+                "altura_extendido": 9.53,
+                "diametro_externo": 4.50,
+                "diametro_hueco_central": 1.31,
+                "peso": 24
+            }
+        },
+        {
+            "numeroSerie": 306,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "30",
+                "carrera": 6.13,
+                "area_efectiva_cilindro": 7.22,
+                "volumen_aceite": 44.23,
+                "altura_collar": 13.00,
+                "altura_extendido": 19.13,
+                "diametro_externo": 4.50,
+                "diametro_hueco_central": 1.31,
+                "peso": 48
+            }
+        },
+        {
+            "numeroSerie": 603,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "60",
+                "carrera": 3,
+                "area_efectiva_cilindro": 12.73,
+                "volumen_aceite": 38.20,
+                "altura_collar": 9.75,
+                "altura_extendido": 12.75,
+                "diametro_externo": 6.25,
+                "diametro_hueco_central": 2.12,
+                "peso": 62
+            }
+        },
+        {
+            "numeroSerie": 606,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "60",
+                "carrera": 6,
+                "area_efectiva_cilindro": 12.73,
+                "volumen_aceite": 74.41,
+                "altura_collar": 12.75,
+                "altura_extendido": 18.75,
+                "diametro_externo": 6.25,
+                "diametro_hueco_central": 2.12,
+                "peso": 78
+            }
+        },
+        {
+            "numeroSerie": 1003,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "95",
+                "carrera": 3,
+                "area_efectiva_cilindro": 20.63,
+                "volumen_aceite": 61.88,
+                "altura_collar": 10.00,
+                "altura_extendido": 13.00,
+                "diametro_externo": 8.38,
+                "diametro_hueco_central": 3.11,
+                "peso": 132
+            }
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "serie": "RC",
+    "serie": "CLP",
     "titulo": "Cilindros tipo Pancake contra tuerca",
     "descripcion": [
         "Diseño aplanado para uso en áreas reducidas",
@@ -19,7 +19,7 @@
         "(libras)"
     ],
     "productos": [{
-            "numero_serie": 602,
+            "numeroSerie": 602,
             "valores_tabla_imperial": {
                 "capacidad_cilindro": "60 (67.1)",
                 "carrera": 1.97,
@@ -32,7 +32,7 @@
             }
         },
         {
-            "numero_serie": 1002,
+            "numeroSerie": 1002,
             "valores_tabla_imperial": {
                 "capacidad_cilindro": "100 (11.7)",
                 "carrera": 1.97,
@@ -45,7 +45,7 @@
             }
         },
         {
-            "numero_serie": 1602,
+            "numeroSerie": 1602,
             "valores_tabla_imperial": {
                 "capacidad_cilindro": "160 (172.2)",
                 "carrera": 1.97,
@@ -55,6 +55,58 @@
                 "altura_extendido": 7.60,
                 "diametro_externo": 8.66,
                 "peso": 33
+            }
+        },
+        {
+            "numeroSerie": 2002,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "200 (221.3)",
+                "carrera": 1.97,
+                "area_efectiva_cilindro": 44.27,
+                "volumen_aceite": 78.43,
+                "altura_collar": 6.10,
+                "altura_extendido": 7.87,
+                "diametro_externo": 9.65,
+                "peso": 125
+            }
+        },
+        {
+            "numeroSerie": 2502,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "250 (284.2)",
+                "carrera": 1.97,
+                "area_efectiva_cilindro": 56.85,
+                "volumen_aceite": 100.72,
+                "altura_collar": 6.26,
+                "altura_extendido": 8.03,
+                "diametro_externo": 10.83,
+                "peso": 163
+            }
+        },
+        {
+            "numeroSerie": 4002,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "400 (433.6)",
+                "carrera": 1.97,
+                "area_efectiva_cilindro": 86.72,
+                "volumen_aceite": 153.64,
+                "altura_collar": 7.01,
+                "altura_extendido": 8.78,
+                "diametro_externo": 13.78,
+                "peso": 295
+            }
+        },
+        {
+            "numeroSerie": 5002,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "500 (566.2)",
+                "carrera": 1.97,
+                "area_efectiva_cilindro": 113.25,
+                "volumen_aceite": 200.63,
+                "altura_collar": 7.56,
+                "altura_extendido": 9.33,
+                "diametro_externo": 15.75,
+                "peso": 416
             }
         }
     ]

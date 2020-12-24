@@ -1,0 +1,203 @@
+{
+    "serie": "RSM",
+    "titulo": "Cilindros de baja altura",
+    "descripcion": [
+        "Cilindros Flat-Jac®, serie RSM",
+        "Diseño plano y compacto que permite utilizarlos en lugares donde otros cilindros no caben",
+        "Las series RSM 750, 1000 y 1500 tienen manijas que facilitan su transporte",
+        "Los orificios de montaje facilitan la fijación de piezas",
+        "Acabado de esmalte horneado para una mayor resistencia a la corrosión",
+        "Todos los modelos incluyen acople CR-400 y tapa guardapolvo*",
+        "Émbolos de acero de alta calidad con cromado duro",
+        "Los extremos acanalados del émbolo no necesitan silletas",
+        "Retorno por resorte de simple acción",
+        "Cilindros de baja altura, serie RCS",
+        "Diseño liviano y de perfil bajo que permite su uso en espacios reducidos",
+        "Acabado de esmalte horneado para una mayor resistencia a la corrosión",
+        "Diafragma limpiador del émbolo que reduce la contaminación y prolonga la vida útil del cilindro",
+        "Todos los modelos incluyen acople CR-400 y tapa guardapolvo",
+        "Extremo acanalado del émbolo con orificios roscados para montar silletas inclinables",
+        "Manija integrada en el modelo RCS-1200 para facilitar su transporte",
+        "Émbolos de acero niquelado",
+        "Retorno por resorte de simple acción"
+    ],
+    "medidas": [
+        "toneladas",
+        "(pulg)",
+        "*",
+        "pulg2",
+        "pulg3",
+        "(pulg)",
+        "(libras)"
+    ],
+    "productos": [{
+            "numeroSerie": 50,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "5 (4.9)",
+                "carrera": 0.25,
+                "area_efectiva_cilindro": 0.99,
+                "volumen_aceite": 0.25,
+                "altura_retraida": 1.28,
+                "altura_extendido": 1.53,
+                "diametro_externo": "2.31 x 1.63",
+                "peso": 2.3
+            }
+        },
+        {
+            "numeroSerie": 100,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 0.44,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 0.98,
+                "altura_retraida": 1.69,
+                "altura_extendido": 2.13,
+                "diametro_externo": "2.31 x 1.63",
+                "peso": 3.1
+            }
+        },
+        {
+            "numeroSerie": 200,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "20 (22.1)",
+                "carrera": 0.44,
+                "area_efectiva_cilindro": 4.43,
+                "volumen_aceite": 1.94,
+                "altura_retraida": 2.03,
+                "altura_extendido": 2.47,
+                "diametro_externo": "4.00 x 3.00",
+                "peso": 6.8
+            }
+        },
+        {
+            "numeroSerie": 300,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "30 (32.4)",
+                "carrera": 0.50,
+                "area_efectiva_cilindro": 6.49,
+                "volumen_aceite": 3.25,
+                "altura_retraida": 2.31,
+                "altura_extendido": 2.81,
+                "diametro_externo": "4.63 x 3.75",
+                "peso": 2.3
+            }
+        },
+        {
+            "numeroSerie": 500,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "50 (48.1)",
+                "carrera": 0.63,
+                "area_efectiva_cilindro": 9.62,
+                "volumen_aceite": 6.01,
+                "altura_retraida": 2.63,
+                "altura_extendido": 3.25,
+                "diametro_externo": "5.50 x 4.50",
+                "peso": 15
+            }
+        },
+        {
+            "numeroSerie": 750,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "75 (79.5)",
+                "carrera": 0.63,
+                "area_efectiva_cilindro": 15.90,
+                "volumen_aceite": 9.94,
+                "altura_retraida": 3.13,
+                "altura_extendido": 3.75,
+                "diametro_externo": "6.50 x 5.50",
+                "peso": 25
+            }
+        },
+        {
+            "numeroSerie": 1000,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "100 (98.1)",
+                "carrera": 0.63,
+                "area_efectiva_cilindro": 19.63,
+                "volumen_aceite": 12.27,
+                "altura_retraida": 3.38,
+                "altura_extendido": 4.00,
+                "diametro_externo": "7.00 x 6.00",
+                "peso": 32
+            }
+        },
+        {
+            "numeroSerie": 1500,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "150 (153.4)",
+                "carrera": 0.63,
+                "area_efectiva_cilindro": 30.68,
+                "volumen_aceite": 19.17,
+                "altura_retraida": 3.94,
+                "altura_extendido": 4.56,
+                "diametro_externo": "8.50 x 7.50",
+                "peso": 58
+            }
+        },
+        {
+            "numeroSerie": 101,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 1.5,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 3.35,
+                "altura_retraida": 3.47,
+                "altura_extendido": 4.97,
+                "diametro_externo": "2.75",
+                "peso": 9
+            }
+        },
+        {
+            "numeroSerie": 201,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "20 (22.1)",
+                "carrera": 1.75,
+                "area_efectiva_cilindro": 4.43,
+                "volumen_aceite": 7.75,
+                "altura_retraida": 3.88,
+                "altura_extendido": 5.63,
+                "diametro_externo": "3.63",
+                "peso": 11
+            }
+        },
+        {
+            "numeroSerie": 302,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "30 (32.4)",
+                "carrera": 2.44,
+                "area_efectiva_cilindro": 6.49,
+                "volumen_aceite": 15.82,
+                "altura_retraida": 4.63,
+                "altura_extendido": 7.06,
+                "diametro_externo": "4.00",
+                "peso": 15
+            }
+        },
+        {
+            "numeroSerie": 502,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "50 (48.1)",
+                "carrera": 2.38,
+                "area_efectiva_cilindro": 9.62,
+                "volumen_aceite": 22.85,
+                "altura_retraida": 4.81,
+                "altura_extendido": 7.19,
+                "diametro_externo": "4.88",
+                "peso": 24
+            }
+        },
+        {
+            "numeroSerie": 1002,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "100 (98.1)",
+                "carrera": 2.25,
+                "area_efectiva_cilindro": 19.63,
+                "volumen_aceite": 44.18,
+                "altura_retraida": 5.56,
+                "altura_extendido": 7.81,
+                "diametro_externo": "6.50",
+                "peso": 50
+            }
+        }
+    ]
+}

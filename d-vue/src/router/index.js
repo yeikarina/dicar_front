@@ -3,6 +3,10 @@ import Home from "../views/Home.vue";
 import Products from "../views/Products.vue";
 import Product from "../views/product.vue";
 import Lista from "../views/lista.vue";
+import Empresa from "../views/empresa.vue";
+import Contacto from "../views/contacto.vue";
+
+
 
 
 const routes = [{
@@ -36,6 +40,16 @@ const routes = [{
         path: "/:producto/",
         name: "lista",
         component: Lista
+    },
+    {
+        path: "/empresa/",
+        name: "empresa",
+        component: Empresa
+    },
+    {
+        path: "/contacto/",
+        name: "contacto",
+        component: Contacto
     }
 ];
 

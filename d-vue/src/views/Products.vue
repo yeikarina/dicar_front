@@ -204,8 +204,6 @@ export default {
           producto: producto,
         },
       });
-      // console.log(this.$store.state.selectProduct);
-      // console.log(...mapState("selector"))
     },
   },
   components: {},

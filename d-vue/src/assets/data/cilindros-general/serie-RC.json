@@ -21,7 +21,7 @@
         "(libras)"
     ],
     "productos": [{
-            "numero_serie": 50,
+            "numeroSerie": 50,
             "valores_tabla_imperial": {
                 "capacidad_cilindro": "5 (4.9)",
                 "carrera": 0.63,
@@ -85,6 +85,95 @@
                 "altura": 12.75,
                 "peso": 6.1
             }
+        },
+        {
+            "numeroSerie": 101,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 1,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 2.24,
+                "altura": 3.53,
+                "peso": 4.0
+            }
+        },
+        {
+            "numeroSerie": 102,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 2.13,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 4.75,
+                "altura": 4.78,
+                "peso": 5.1
+            }
+        },
+        {
+            "numeroSerie": 104,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 4.13,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 9.23,
+                "altura": 6.75,
+                "peso": 7.2
+            }
+        },
+        {
+            "numeroSerie": 106,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 6.13,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 13.70,
+                "altura": 9.75,
+                "peso": 9.8
+            }
+        },
+        {
+            "numeroSerie": 108,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 8,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 17.89,
+                "altura": 11.75,
+                "peso": 12
+            }
+        },
+        {
+            "numeroSerie": 1010,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 10.13,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 22.65,
+                "altura": 13.75,
+                "peso": 14
+            }
+        },
+        {
+            "numeroSerie": 1012,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 12,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 26.84,
+                "altura": 15.75,
+                "peso": 15
+            }
+        },
+        {
+            "numeroSerie": 1014,
+            "valores_tabla_imperial": {
+                "capacidad_cilindro": "10 (11.2)",
+                "carrera": 14,
+                "area_efectiva_cilindro": 2.24,
+                "volumen_aceite": 31.31,
+                "altura": 17.75,
+                "peso": 18
+            }
         }
+
     ]
 }

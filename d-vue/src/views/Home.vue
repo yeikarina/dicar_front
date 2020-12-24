@@ -27,7 +27,9 @@
             ab in iusto nam? Molestias a temporibus laborum veniam quos nisi
             provident omnis totam earum enim, hic similique in ipsam.
             <span class="Watch-Products">
-              <a href="./productCards.html" class="link">Ver productos</a>
+              <button @click="changeSelector(0, 'cilindros')" class="link">
+                Ver productos
+              </button>
             </span>
           </p>
           <h2 class="Products-tag Big-font">PRODUCTOS</h2>
@@ -36,14 +38,28 @@
       <section class="Us">
         <h2 class="Us-tag Big-font">NOSOTROS</h2>
         <div class="Us-content">
-          <h3 class="Us-title">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            sunt autem ut beatae expedita sit.
-          </h3>
+          <h3 class="Us-title">¿Quienes somos?</h3>
           <p class="Us-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-            inventore saepe cum mollitia quos eius dignissimos illum, nisi
-            aliquam blanditiis. Dolorem maiores adipisci
+            Nuestra compañía se dedicada a la importación, comercialización,
+            mantenimiento y alquiler de equipos hidráulicos, siendo distribuidor
+            directo en Colombia de la compañía americana ENERPAC, líder mundial
+            en herramientas y tecnología Hidráulica. Fue creada el 04 de mayo de
+            2016 en Cali, con domicilio en la Calle 34 #2C-66 del barrio
+            porvenir, de la ciudad de Cali.
+          </p>
+          <p class="Us-text">
+            Enerpac, es líder en el mercado mundial de herramientas hidráulicas
+            de alta presión, productos de fuerza controlada y soluciones para el
+            posicionamiento preciso de cargas pesadas. Enerpac fabrica
+            productos, desde el cilindro hidráulico mas pequeño hasta sistemas
+            completos de posicionamiento y elevación operados por computadora,
+            brindando soluciones innovadoras que aumenten la productividad, son
+            rentables y hacen que el trabajo sea mas seguro y fácil de realizar.
+          </p>
+          <p class="Us-text">
+            DICAR IMPORTADORA S.A.S, cuenta con un equipo de trabajo calificado
+            y alta experiencia para el asesoramiento para atender los
+            requerimientos y necesidades de nuestros clientes.
           </p>
           <div class="Us-video">
             <video
@@ -64,7 +80,19 @@
 
 export default {
   name: "Home",
-  components: {}
+  methods: {
+    changeSelector(selectProduct, producto) {
+      let payload = { selectProduct, producto };
+      this.$store.commit("changeSelector", payload);
+      this.$router.push({
+        name: "lista",
+        params: {
+          producto: producto,
+        },
+      });
+    },
+  },
+  components: {},
 };
 </script>
 
