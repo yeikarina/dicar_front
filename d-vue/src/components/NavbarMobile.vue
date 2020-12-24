@@ -1,11 +1,7 @@
 <template>
   <header class="Header">
-    <router-link class="Header-logo-link" to="/">
-      <img
-        src="../assets/images/LOGOTIPO_DICAR.png"
-        alt="DICAR importadora S.A.S"
-        class="Header-logo"
-      />
+    <router-link to="/" id="navigation-icon">
+      <i class="fa fa-home"></i>
     </router-link>
     <nav class="Navigation">
       <ul class="Header-items">
@@ -38,18 +34,25 @@
           type="text"
           name="q"
           placeholder="Buscar"
-        />
-      </div> -->
+        /> -->
+      <!-- </div> -->
     </nav>
   </header>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="scss">
+#navigation-icon {
+  margin-right: 10px;
+  color: #201e1e;
+  cursor: pointer;
+  i {
+    font-size: 1.5rem;
+  }
+}
 .Header {
   position: relative;
   display: flex;

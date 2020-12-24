@@ -2,9 +2,10 @@ import { createStore } from "vuex";
 import serieRc from "@/assets/data/cilindros-general/serie-RC.json";
 import serieClp from "@/assets/data/cilindros-general/serie-CLP.json";
 import serieRSM from "@/assets/data/cilindros-general/serie-RSM.json";
+import serieRCH from "@/assets/data/cilindros-general/serie-RCH.json";
 
 
-let cilindros = [serieRc, serieClp, serieRSM];
+let cilindros = [serieRc, serieClp, serieRSM, serieRCH];
 
 export default createStore({
     state: {
