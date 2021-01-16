@@ -63,8 +63,8 @@
           </p>
           <div class="Us-video">
             <iframe
-              width="560"
-              height="315"
+              width="1120"
+              height="630"
               src="https://www.youtube.com/embed/MRvZj2BmXF4"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -94,12 +94,14 @@ export default {
       });
     },
   },
+
   components: {},
 };
 </script>
 
 <style lang="scss">
 @import url("../assets/styles/style.css");
+
 @function emTopx($fontSize, $em) {
   @return $fontSize * $em;
 }
@@ -109,49 +111,6 @@ export default {
 }
 
 .Article {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: #fdf1b9;
-  overflow: hidden;
-  &-grid {
-    position: relative;
-    display: grid;
-    grid-template-rows: auto pxToem(16, 35) * 1em auto;
-    grid-template-columns: 1fr;
-    width: 100%;
-    justify-items: right;
-  }
-  .Banner {
-    width: 100%;
-    position: relative;
-    grid-row: 1 / 3;
-    grid-column: 1 / 2;
-    &-image {
-      width: 100%;
-    }
-    // &-products-image {
-    //   //opacity: 0;
-    // }
-    &-title {
-      top: 0%;
-      left: 0%;
-      display: inline-block;
-      position: absolute;
-      font-size: 4vw;
-      color: #ffffff;
-      background-color: #343232;
-      opacity: 0.91;
-      margin: 0;
-      padding: 8% 43% 0% 8%;
-      height: 100%;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    & h1.Background-none {
-      background-color: transparent;
-    }
-  }
   .Products {
     grid-row: 2 / 4;
     grid-column: 1 / 2;
@@ -238,18 +197,76 @@ export default {
     width: 80vw;
     height: 100%;
     .Us-video {
-      width: 100%;
-      display: flex;
-      margin-bottom: 0;
-      padding-bottom: 0;
-      video {
-        align-self: flex-end;
-        width: 100%;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin: 5% 0 0 0;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
   }
 }
 @media screen and (max-width: 768px) {
+  .Article {
+    .Banner {
+      grid-row: inherit;
+      &-title {
+        font-size: 8vw;
+        padding: 8% 38% 0% 8%;
+      }
+    }
+    .Products {
+      grid-row: 2 / 4;
+      grid-column: 1 / 2;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      min-width: 32em;
+      width: 67.2%;
+      align-self: flex-end;
+      margin-bottom: 10%;
+      &-image {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+        margin: 0;
+        left: -5%;
+        .Big-image {
+          width: 100%;
+        }
+      }
+
+      .Products-subtitle {
+        width: 50%;
+        border-bottom: 3px solid black;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        line-height: 2em;
+      }
+      .Products-title {
+        width: 100%;
+        position: relative;
+        left: -5%;
+      }
+      .Products-text {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-right: 5%;
+        margin: 0;
+        width: 50%;
+        font-size: 16px;
+      }
+      .Products-tag {
+        margin: 0.5em auto 0;
+      }
+    }
+  }
   .Us {
     &-title {
       position: relative;
@@ -258,6 +275,25 @@ export default {
       margin-top: 3%;
       padding-right: 16vw;
       margin-left: 1.5vw;
+    }
+    &-text {
+      // border-left: 3px solid black;
+      // padding-left: 0.5em;
+      // margin-bottom: 2em;
+      padding-right: 5vw;
+      margin-left: 0;
+    }
+    &-content {
+    left: 14.4vw;
+    width: 80vw;
+    height: 100%;
+    }
+    .Us-video {
+      margin: 5% 0;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

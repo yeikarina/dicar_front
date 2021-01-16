@@ -1,5 +1,6 @@
 import NavBar from '@/components/NavBar.vue';
 <template>
+<div id="app">
   <NavbarMobile v-if="mobileView" />
   <Navbar v-else />
   <!-- <div id="nav">
@@ -8,6 +9,7 @@ import NavBar from '@/components/NavBar.vue';
   </div> -->
   <router-view />
   <Footer> </Footer>
+</div>
 </template>
 
 <script>
@@ -38,4 +40,5 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>

@@ -63,8 +63,7 @@ body{
     border: 1px solid black;
 }*/
 
-
-/* .Article {
+.Article {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -125,6 +124,8 @@ body{
     background-color: transparent;
 }
 
+
+/*
 .Article .Products {
     -ms-grid-row: 2;
     -ms-grid-row-span: 2;
