@@ -23,7 +23,7 @@
 
 .DS_Store
 node_modules
-dist/
+d-vue/dist/
 
 
 # local env files
