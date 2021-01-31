@@ -1,6 +1,6 @@
 <template>
   <footer class="Footer">
-      <!-- <img
+    <!-- <img
       class="Footer-image"
       src="../assets/images/footer.png"
       alt="Ccity view from above"
@@ -11,6 +11,27 @@
         src="../assets/images/Enerpack-Footer.svg"
         alt=""
       />
+      <section class="Phone">
+        <h3 class="Phone-title">Teléfonos y contactos</h3>
+        <div class="Phone-info">
+          <i class="fas fa-phone-square-alt Phone-icon"></i>
+          <ul>
+            <li><a href="tel:+573797837"><p>(+57) 379 7837</p></a></li>
+            <li><p>(+57) 322 465 7319</p></li>
+            <li><p>(+57) 323 363 6670</p></li>
+            <li><p>(+57) 316 852 9195</p></li>
+            <li><p>(+57) 305 343 3238</p></li>
+
+
+            <li></li>
+          </ul>
+          <!-- <p> / </p> -->
+        </div>
+        <div class="Phone-info">
+          <i class="fas fa-mail-bulk Message-icon"></i>
+          <p>financiero@dicar.co</p>
+        </div>
+      </section>
       <section class="Footer-social">
         <p>Siguenos en:</p>
         <ul class="Footer-items">
@@ -39,7 +60,15 @@
 export default {};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@function emTopx($fontSize, $em) {
+  @return $fontSize * $em;
+}
+
+@function pxToem($fontSize, $px) {
+  @return $px / $fontSize;
+}
+
 .Footer {
   position: relative;
   width: 100%;
@@ -60,9 +89,46 @@ export default {};
     align-items: flex-end;
     position: absolute;
     background-color: #3f3e3e;
-    opacity: .91;
+    opacity: 0.91;
     padding-bottom: 3em;
     box-sizing: border-box;
+
+    .Phone {
+      align-self: center;
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      &-title {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+      }
+      &-info {
+        width: pxToem(16, 208) * 1em;
+        display: flex;
+        flex-flow: row nowrap;
+        box-sizing: border-box;
+      }
+      .Phone-icon,
+      .Message-icon {
+        font-size: 40px;
+      }
+      ul{
+        padding: 0;
+        margin: 0;
+      }
+      li{
+        margin-bottom: 2%;
+        list-style: none;
+      }
+      p {
+        font-size: 16px;
+        margin: 0;
+        margin-left: 1em;
+        display: inline-block;
+      }
+    }
   }
   &-link:link,
   &-link:visited {

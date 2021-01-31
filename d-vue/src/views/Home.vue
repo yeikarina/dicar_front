@@ -62,14 +62,14 @@
             requerimientos y necesidades de nuestros clientes.
           </p>
           <div class="Us-video">
-            <iframe
+            <!-- <iframe
               width="1120"
               height="630"
               src="https://www.youtube.com/embed/MRvZj2BmXF4"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-            ></iframe>
+            ></iframe> -->
           </div>
         </div>
       </section>
@@ -108,6 +108,10 @@ export default {
 
 @function pxToem($fontSize, $px) {
   @return $px / $fontSize;
+}
+
+button{
+  border: none;
 }
 
 .Article {
@@ -201,7 +205,8 @@ export default {
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
-      margin: 5% 0 0 0;
+      margin: 5% 0;
+      left: -3%;
       iframe {
         position: absolute;
         top: 0;
@@ -224,7 +229,7 @@ export default {
       grid-column: 1 / 2;
       position: relative;
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       align-items: center;
       min-width: 32em;
       width: 67.2%;
@@ -235,7 +240,7 @@ export default {
         position: relative;
         width: 50%;
         margin: 0;
-        left: -5%;
+        left: -11%;
         .Big-image {
           width: 100%;
         }
@@ -250,13 +255,15 @@ export default {
         line-height: 2em;
       }
       .Products-title {
-        width: 100%;
+        width: 60%;
         position: relative;
         left: -5%;
       }
       .Products-text {
         display: inline-block;
         box-sizing: border-box;
+        position: relative;
+        left: -11%;
         padding-right: 5%;
         margin: 0;
         width: 50%;
@@ -277,9 +284,6 @@ export default {
       margin-left: 1.5vw;
     }
     &-text {
-      // border-left: 3px solid black;
-      // padding-left: 0.5em;
-      // margin-bottom: 2em;
       padding-right: 5vw;
       margin-left: 0;
     }
@@ -289,7 +293,7 @@ export default {
     height: 100%;
     }
     .Us-video {
-      margin: 5% 0;
+
       iframe {
         width: 100%;
         height: 100%;

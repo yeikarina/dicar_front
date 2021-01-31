@@ -70,17 +70,6 @@
         </div>
         <h2 class="Location-tag Big-font">TIENDA</h2>
       </section>
-      <section class="Phone">
-        <h3 class="Phone-title">Teléfonos y contactos</h3>
-        <div class="Phone-info">
-          <i class="fas fa-phone-square-alt Phone-icon"></i>
-          <p>(+57) 3797837 / (+57) 322 465 7319</p>
-        </div>
-        <div class="Phone-info">
-          <i class="fas fa-mail-bulk Message-icon"></i>
-          <p>financiero@dicar.co</p>
-        </div>
-      </section>
     </article>
   </main>
 </template>
@@ -92,13 +81,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@function emTopx($fontSize, $em){
-    @return $fontSize * $em;
-}
+// @function emTopx($fontSize, $em){
+//     @return $fontSize * $em;
+// }
 
-@function pxToem($fontSize, $px){
-    @return $px / $fontSize;
-}
+// @function pxToem($fontSize, $px){
+//     @return $px / $fontSize;
+// }
 .Contact {
   display: flex;
   width: 84.3%;
@@ -193,35 +182,6 @@ export default {
       width: 98.7%;
       background-color: lightgray;
     }
-  }
-}
-.Phone {
-  align-self: center;
-  width: 60.3%;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-bottom: 5%;
-  &-title {
-    width: 100%;
-    text-align: center;
-  }
-  &-info {
-    width: pxToem(16, 208) * 1em;
-    display: flex;
-    flex-flow: row nowrap;
-    box-sizing: border-box;
-  }
-  .Phone-icon,
-  .Message-icon {
-    font-size: 40px;
-  }
-  p {
-    font-size: 16px;
-    margin: 0;
-    margin-left: 1em;
-    display: inline-block;
   }
 }
 </style>
