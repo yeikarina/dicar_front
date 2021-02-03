@@ -16,20 +16,22 @@
         <div class="Phone-info">
           <i class="fas fa-phone-square-alt Phone-icon"></i>
           <ul>
-            <li><a href="tel:+573797837"><p>(+57) 379 7837</p></a></li>
-            <li><p>(+57) 322 465 7319</p></li>
-            <li><p>(+57) 323 363 6670</p></li>
-            <li><p>(+57) 316 852 9195</p></li>
-            <li><p>(+57) 305 343 3238</p></li>
-
-
-            <li></li>
+            <li><a href="tel:+573797837">(+57) 379 7837</a></li>
+            <li><a href="tel:+573233636670">(+57) 323 363 6670</a></li>
+            <li><a href="tel:+573168529195">(+57) 316 852 9195</a></li>
+            <li><a href="tel:+573053433238">(+57) 305 343 3238</a></li>
+            <li><a href="tel:+573224657319">(+57) 322 465 7319</a></li>
           </ul>
           <!-- <p> / </p> -->
         </div>
         <div class="Phone-info">
           <i class="fas fa-mail-bulk Message-icon"></i>
-          <p>financiero@dicar.co</p>
+          <ul>
+            <li><a href="mailto:gerencia@dicar.co">gerencia@dicar.co</a></li>
+            <li><a href="mailto:comercial@dicar.co">comercial@dicar.co</a></li>
+            <li><a href="mailto:comercial4@dicar.co">comercial4@dicar.co</a></li>
+            <li><a href="mailto:financiero@dicar.co">financiero@dicar.co</a></li>
+          </ul>
         </div>
       </section>
       <section class="Footer-social">
@@ -72,7 +74,7 @@ export default {};
 .Footer {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
   background: url("../assets/images/footer.png");
   // &-image {
   //   width: 100%;
@@ -114,20 +116,32 @@ export default {};
       .Message-icon {
         font-size: 40px;
       }
-      ul{
+      ul {
         padding: 0;
         margin: 0;
       }
-      li{
+      li {
         margin-bottom: 2%;
         list-style: none;
       }
-      p {
+      a {
+        font-weight: 500;
         font-size: 16px;
         margin: 0;
         margin-left: 1em;
+        transition: 0.3s;
         display: inline-block;
       }
+      a:link,
+      a:visited {
+        color: #ffffff;
+        transition: 0.3s;
+      }
+      a:hover{
+        color: #f7cf18;
+      }
+      
+      
     }
   }
   &-link:link,

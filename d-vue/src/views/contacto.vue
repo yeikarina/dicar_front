@@ -5,41 +5,43 @@
         <div class="Contact-content">
           <h3 class="Contact-title">Formulario de contacto</h3>
           <form action="" class="Contact-form">
+            <label for="formname">Nombre</label>
             <input
               class="Contact-input"
               type="text"
               name="name"
+              id="formname"
               placeholder="Nombre"
               tabindex="1"
             />
+            <label for="formphone">Telefono</label>
             <input
               class="Contact-input"
-              type="text"
-              name="lastNambe"
-              id=""
-              placeholder="Apellido"
-              tabindex="2"
-            />
-            <input
-              class="Contact-input"
-              type="number"
+              type="tel"
+              id="formphone"
               name="phone"
               placeholder="Telefono"
               tabindex="3"
             />
+            <label for="formcompany">Empresa</label>
             <input
               class="Contact-input"
+              id="formcompany"
               type="text"
               name="company"
               placeholder="Empresa"
               tabindex="4"
             />
+            <label for="formemail">Email</label>
             <input
               class="Contact-input"
+              id="formemail"
               type="email"
               name="email"
               placeholder="Correo electrónico"
             />
+            <label for="formmessage">¿Cual es tu duda?</label>
+            <textarea  class="Contact-input" name="message" id="formmessage" cols="10" rows="4"></textarea>
             <input
               class="Contact-input Contact-button"
               type="button"
@@ -76,7 +78,7 @@
 
 <script>
 export default {
-  name: "contacto",
+  name: "contacto"
 };
 </script>
 
@@ -105,24 +107,34 @@ export default {
   &-form {
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
-    width: 100%;
+    margin: 0 0 0 5%;
+    flex-flow: column wrap;
+    // width: 100%;
     position: relative;
+    label{
+      margin:0 0 7px 2%;
+    font-weight: 700;
+    color: #201e1e;
+    }
   }
   &-input {
     line-height: 2.5em;
     border-radius: 10px;
     border: none;
     box-sizing: border-box;
-    width: 32%;
+    width: 40%;
     margin-bottom: 2%;
-    padding-left: 4%;
+    padding-left: 2%;
     color: #201e1e;
   }
-  &-input:nth-of-type(4),
-  &-input:nth-of-type(5) {
-    width: 48%;
-  }
+  // &-input:nth-of-type(4),
+  // &-input:nth-of-type(5) {
+  //   width: 48%;
+  // }
+  // &-input:nth-of-type(5) {
+  //   height: 150px;
+
+  // }
   &-input::placeholder {
     color: #000000;
     font-weight: 500;
