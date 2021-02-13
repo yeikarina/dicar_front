@@ -52,53 +52,12 @@
       class="Contact-input Contact-button"
       type="button"
       value="Enviar"
-      @click="atun()"
+      @click="sendMail()"
     />
   </form>
 </template>
 
 <script>
-/* eslint-disable */
-var Email = {
-  send: function(a) {
-    return new Promise(function(n, e) {
-      (a.nocache = Math.floor(1e6 * Math.random() + 1)), (a.Action = "Send");
-      var t = JSON.stringify(a);
-      Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function(e) {
-        n(e);
-      });
-    });
-  },
-  ajaxPost: function(e, n, t) {
-    var a = Email.createCORSRequest("POST", e);
-    a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"),
-      (a.onload = function() {
-        var e = a.responseText;
-        null != t && t(e);
-      }),
-      a.send(n);
-  },
-  ajax: function(e, n) {
-    var t = Email.createCORSRequest("GET", e);
-    (t.onload = function() {
-      var e = t.responseText;
-      null != n && n(e);
-    }),
-      t.send();
-  },
-  createCORSRequest: function(e, n) {
-    var t = new XMLHttpRequest();
-    return (
-      "withCredentials" in t
-        ? t.open(e, n, !0)
-        : "undefined" != typeof XDomainRequest
-        ? (t = new XDomainRequest()).open(e, n)
-        : (t = null),
-      t
-    );
-  }
-};
-
 export default {
   data() {
     return {
@@ -113,22 +72,7 @@ export default {
     };
   },
   methods: {
-    sendMail() {
-      let tempMessage = `De: ${this.form.name} \r\n Empresa: ${this.form.company} \r\n Mensaje: ${this.form.message}`;
-
-      Email.send({
-        Host: "www.dicar.co",
-        Username: "senderemail@dicar.co",
-        Password: "kZ1p-9&kkVs&",
-        To: "senderemail@dicar.co",
-        From: this.form.email,
-        Subject: "This is the subject",
-        Body: tempMessage
-      }).then(message => alert(message));
-    },
-    atun() {
-      console.log(this.form);
-    }
+    sendMail() {}
   }
 };
 </script>
