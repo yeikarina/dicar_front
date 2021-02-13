@@ -4,26 +4,25 @@ import serieClp from "@/assets/data/cilindros-general/serie-CLP.json";
 import serieRSM from "@/assets/data/cilindros-general/serie-RSM.json";
 import serieRCH from "@/assets/data/cilindros-general/serie-RCH.json";
 
-
 let cilindros = [serieRc, serieClp, serieRSM, serieRCH];
 
 export default createStore({
-    state: {
-        producto: "",
-        productos: [cilindros],
-        selectProduct: [],
-        selectSerie: {}
+  state: {
+    producto: "",
+    productos: [cilindros],
+    selectProduct: [],
+    selectSerie: {},
+  },
+  mutations: {
+    changeSelector(state, payload) {
+      state.selectProduct = state.productos[payload.selectProduct];
+      state.producto = payload.producto;
     },
-    mutations: {
-        changeSelector(state, payload) {
-            state.selectProduct = state.productos[payload.selectProduct];
-            state.producto = payload.producto;
-        },
-        chooseProduct(state, payload) {
-            state.selectSerie = state.selectProduct[payload];
-        }
+    chooseProduct(state, payload) {
+      state.selectSerie = state.selectProduct[payload];
     },
-    actions: {},
-    getters: {},
-    modules: {},
+  },
+  actions: {},
+  getters: {},
+  modules: {},
 });

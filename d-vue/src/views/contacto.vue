@@ -4,51 +4,66 @@
       <section class="Contact">
         <div class="Contact-content">
           <h3 class="Contact-title">Formulario de contacto</h3>
-          <form action="" class="Contact-form">
-            <label for="formname">Nombre</label>
-            <input
-              class="Contact-input"
-              type="text"
-              name="name"
-              id="formname"
-              placeholder="Nombre"
-              tabindex="1"
-            />
-            <label for="formphone">Telefono</label>
-            <input
-              class="Contact-input"
-              type="tel"
-              id="formphone"
-              name="phone"
-              placeholder="Telefono"
-              tabindex="3"
-            />
-            <label for="formcompany">Empresa</label>
-            <input
-              class="Contact-input"
-              id="formcompany"
-              type="text"
-              name="company"
-              placeholder="Empresa"
-              tabindex="4"
-            />
-            <label for="formemail">Email</label>
-            <input
-              class="Contact-input"
-              id="formemail"
-              type="email"
-              name="email"
-              placeholder="Correo electrónico"
-            />
-            <label for="formmessage">¿Cual es tu duda?</label>
-            <textarea  class="Contact-input" name="message" id="formmessage" cols="10" rows="4"></textarea>
-            <input
-              class="Contact-input Contact-button"
-              type="button"
-              value="Enviar"
-            />
-          </form>
+          <contact-form />
         </div>
+        <!-- <div class="Contact-content">
+          <h3 class="Contact-title">Trabajo en progreso</h3>
+          <p class="Contact-text">
+            Estamos trabajando para ofrecerte el mejor servicio, mientras
+            comunicate con nosotros en el siguientes correos:
+          </p>
+          <ul style="list-style: none;">
+            <li class="Contact-links">
+              <a class="Contact-text" href="mailto:gerencia@dicar.co"
+                >gerencia@dicar.co</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="mailto:comercial@dicar.co"
+                >comercial@dicar.co</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="mailto:comercial4@dicar.co"
+                >comercial4@dicar.co</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="mailto:financiero@dicar.co"
+                >financiero@dicar.co</a
+              >
+            </li>
+          </ul>
+
+          <p class="Contact-text">
+            O puedes llamarnos directamente a los siguientes numeros:
+          </p>
+          <ul style="list-style: none;">
+            <li class="Contact-links">
+              <a class="Contact-text" href="tel:+573797837">(+57) 379 7837</a>
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="tel:+573233636670"
+                >(+57) 323 363 6670</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="tel:+573168529195"
+                >(+57) 316 852 9195</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="tel:+573053433238"
+                >(+57) 305 343 3238</a
+              >
+            </li>
+            <li class="Contact-links">
+              <a class="Contact-text" href="tel:+573224657319"
+                >(+57) 322 465 7319</a
+              >
+            </li>
+          </ul>
+        </div> -->
         <h2 class="Big-font Contact-tag">CONTACTO</h2>
       </section>
       <section class="Location">
@@ -77,8 +92,11 @@
 </template>
 
 <script>
+import contactForm from "../components/contactForm.vue";
+
 export default {
-  name: "contacto"
+  name: "contacto",
+  components: { contactForm }
 };
 </script>
 
@@ -104,48 +122,17 @@ export default {
   &-title {
     align-self: flex-start;
   }
-  &-form {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 0 0 5%;
-    flex-flow: column wrap;
-    // width: 100%;
-    position: relative;
-    label{
-      margin:0 0 7px 2%;
-    font-weight: 700;
-    color: #201e1e;
+  &-text {
+    font-size: 20px;
+    color: black;
+  }
+  &-links {
+    margin: 15px 0;
+    font-weight: 600;
+    a:hover {
+      color: #fdf1b9;
+      text-decoration: underline;
     }
-  }
-  &-input {
-    line-height: 2.5em;
-    border-radius: 10px;
-    border: none;
-    box-sizing: border-box;
-    width: 40%;
-    margin-bottom: 2%;
-    padding-left: 2%;
-    color: #201e1e;
-  }
-  // &-input:nth-of-type(4),
-  // &-input:nth-of-type(5) {
-  //   width: 48%;
-  // }
-  // &-input:nth-of-type(5) {
-  //   height: 150px;
-
-  // }
-  &-input::placeholder {
-    color: #000000;
-    font-weight: 500;
-  }
-  &-button {
-    width: 20%;
-    min-width: 8em;
-    border-radius: 25px;
-    padding-left: 0;
-    color: #f7cf18;
-    background-color: #201e1e;
   }
   &-tag {
     align-self: center;

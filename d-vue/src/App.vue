@@ -1,15 +1,15 @@
-import NavBar from '@/components/NavBar.vue';
+
 <template>
-<div id="app">
-  <NavbarMobile v-if="mobileView" />
-  <Navbar v-else />
-  <!-- <div id="nav">
+  <div id="app">
+    <NavbarMobile v-if="mobileView" />
+    <Navbar v-else />
+    <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
-  <router-view />
-  <Footer> </Footer>
-</div>
+    <router-view />
+    <Footer> </Footer>
+  </div>
 </template>
 
 <script>
@@ -20,23 +20,23 @@ import Footer from "./components/Footer.vue";
 export default {
   data() {
     return {
-      mobileView: true,
+      mobileView: true
     };
   },
-  methods:{
-    handleView(){
-      this.mobileView = window.innerWidth <=990;
+  methods: {
+    handleView() {
+      this.mobileView = window.innerWidth <= 990;
     }
   },
-  created(){
+  created() {
     this.handleView();
-    window.addEventListener('resize', this.handleView)
+    window.addEventListener("resize", this.handleView);
   },
   components: {
     Navbar,
     Footer,
-    NavbarMobile,
-  },
+    NavbarMobile
+  }
 };
 </script>
 
