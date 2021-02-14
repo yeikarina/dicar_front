@@ -67,13 +67,35 @@ export default {
         tel: undefined,
         company: "",
         email: "",
-        message: ""
-      }
+        message: "",
+      },
     };
   },
   methods: {
-    sendMail() {}
-  }
+    sendMail() {
+      console.log("hola, vamos a intentar enviar el correo");
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+      var urlencoded = new URLSearchParams();
+      urlencoded.append("name", this.form.name);
+      urlencoded.append("phone", this.form.phone);
+      urlencoded.append("company", this.form.company);
+      urlencoded.append("email", this.form.email);
+      urlencoded.append("message", this.form.message);
+
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: urlencoded,
+        redirect: "follow",
+      };
+      //En este punto, se debe cambiar la url, por la url del endpoint de la API para enviar el email
+      fetch("http://localhost:3500/dicar/sendmail", requestOptions)
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.log("error al hacer fetch", error));
+    },
+  },
 };
 </script>
 
